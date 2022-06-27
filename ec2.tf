@@ -18,9 +18,6 @@ resource "aws_instance" "myec2" {
       "sudo apt install conntrack",
       "sudo minikube start --vm-driver=none",
       "sudo minikube status",
-      "sudo chmod +x /home/ubuntu/kubectl",
-      "sudo cp kubectl /usr/local/bin/kubectl",
-      "sudo usermod -aG docker ubuntu"
     ]
     connection {
       type        = "ssh"
