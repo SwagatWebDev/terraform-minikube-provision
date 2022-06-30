@@ -35,7 +35,7 @@ resource "aws_instance" "myec2" {
       type        = "ssh"
       host        = self.public_ip
       user        = "ubuntu"
-      private_key = file("/home/ubuntu/ubuntu-keypair.pem")
+      private_key = file("./ubuntu-keypair.pem")
     }
   }
 }
